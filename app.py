@@ -12,7 +12,7 @@ st.markdown("Verilen verilerle aktif enerji kullanımını sınıflandırır.")
 model_names = ["KNN", "NaiveBayes", "MLP", "XGBoost"]
 selector_names = ["PCA", "SelectKBest", "LDA"]
 
-model_choice = st.selectbox("Model Seçin:", model_names)
+model_choice = st.selectbox("Model Seçin: (k-NN Dosya Boyutundan Ötürü İn-Aktif)", model_names)
 selector_choice = st.selectbox("Özellik Seçici Seçin:", selector_names)
 
 # --- Giriş Verileri ---
